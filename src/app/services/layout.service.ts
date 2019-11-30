@@ -16,10 +16,26 @@ export class LayoutService {
     draggable: {
       enabled: true
     },
-    pushItems: true,
+    pushItems: false,
+    swap: false,
+    swapWhileDragging: false,
+    disablePushOnDrag: true,
+    disablePushOnResize: true,
     resizable: {
       enabled: true
-    }
+    },
+    gridType: 'fixed',
+    fixedColWidth: 50,
+    fixedRowHeight: 50,
+    maxCols: 5,
+    maxRows: 12,
+    enableEmptyCellDrop: true,
+    enableEmptyCellDrag: true,
+    enableOccupiedCellDrop: true,
+    enableEmptyCellClick: true,
+    defaultItemCols: 1,
+    defaultItemRows: 1,
+    displayGrid: 'always'
   };
   public layout: GridsterItem[] = [];
 
